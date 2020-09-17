@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark primary-color">
+        <nav className="navbar navbar-expand-lg navbar-light primary-color">
         
         <Link className="navbar-brand" to="/">Ninja Blog</Link>
       
@@ -31,9 +31,9 @@ export default function Navbar() {
               <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">More</a>
               <div className="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                <a className="dropdown-item" href="#">Action</a>
-                <a className="dropdown-item" href="#">Another action</a>
-                <a className="dropdown-item" href="#">Something else here</a>
+                <Link className="dropdown-item" to="/">Action</Link>
+                <Link className="dropdown-item" to="/">Another action</Link>
+                <Link className="dropdown-item" to="/">Something else here</Link>
               </div>
             </li>
       
@@ -41,7 +41,7 @@ export default function Navbar() {
       
           <form className="form-inline">
             <div className="md-form my-0">
-              <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"/>
+              <input className="inp-style form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"/>
             </div>
           </form>
         </div>
