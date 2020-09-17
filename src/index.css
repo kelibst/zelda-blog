@@ -1,3 +1,11 @@
 .header{
   background-color: rosybrown;
+  min-height: 60vh;
+}
+
+.raised {
+  background: lightcyan;
+  border-radius: 2rem 2rem 0 0;
+  position: relative;
+  top: -5rem;
 }

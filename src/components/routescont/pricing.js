@@ -2,9 +2,9 @@ import React from "react";
 
 export default function pricing() {
   return (
-    <div>
+    <div className="container raised">
       <h1 className="text-center font-weight-bolder text-dark">
-        Welcome to the Zelda Blog page
+        Welcome to the Zelda pricing page
       </h1>
       <p className="text-secondary">
         <h2 className="text-dark font-weight-bold">Title</h2>
