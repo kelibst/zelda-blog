@@ -1,5 +1,6 @@
 import Axios from 'axios'
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class home extends Component {
   state = {
@@ -8,7 +9,6 @@ export default class home extends Component {
   componentDidMount(){
     Axios.get('https://jsonplaceholder.typicode.com/posts')
         .then(res =>{
-          console.log(res)
           this.setState({
             posts: res.data.slice(0,10)
           })
@@ -39,9 +39,9 @@ export default class home extends Component {
             {/*<!-- Text -->*/}  
             <p className="card-text">{post.body}</p>
             {/*<!-- Link -->*/}  
-            <a href="#!" className="orange-text d-flex flex-row-reverse p-2">
+            <Link to={'/' + post.id} className="orange-text d-flex flex-row-reverse p-2">
               <h5 className="waves-effect waves-light">Read more<i className="fas fa-angle-double-right ml-2"></i></h5>
-            </a>
+            </Link>
 
           </div>
           {/*<!-- Card content -->*/}
@@ -63,7 +63,7 @@ export default class home extends Component {
       <h1 className="text-center display-5 pt-5 font-weight-bolder text-dark">
         Welcome to the Zelda Home page
       </h1>
-      <div className="row my-6 py-6">
+      <div className="row my-5 py-5">
         {postList}
       </div>
       
