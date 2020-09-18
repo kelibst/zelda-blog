@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dcef1d91999c567e58611ad6f86571b9",
+    "revision": "fc27737aa580e27f430ee4a338288682",
     "url": "/zelda-blog/index.html"
   },
   {
-    "revision": "2c5f69c4df94ca7d3072",
+    "revision": "29f15ef1499234bd6b09",
     "url": "/zelda-blog/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "ebb32c97b5fc893b9afa",
-    "url": "/zelda-blog/static/css/main.3e2e2d4d.chunk.css"
+    "revision": "5de24b650c3acba73836",
+    "url": "/zelda-blog/static/css/main.6bbc07b1.chunk.css"
   },
   {
-    "revision": "2c5f69c4df94ca7d3072",
-    "url": "/zelda-blog/static/js/2.be361556.chunk.js"
+    "revision": "29f15ef1499234bd6b09",
+    "url": "/zelda-blog/static/js/2.f39febe7.chunk.js"
   },
   {
     "revision": "b6840d1fa4cd3c3e88b7c215b28b2e9e",
-    "url": "/zelda-blog/static/js/2.be361556.chunk.js.LICENSE.txt"
+    "url": "/zelda-blog/static/js/2.f39febe7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ebb32c97b5fc893b9afa",
-    "url": "/zelda-blog/static/js/main.a37c9cb1.chunk.js"
+    "revision": "5de24b650c3acba73836",
+    "url": "/zelda-blog/static/js/main.354f22ea.chunk.js"
   },
   {
     "revision": "14a393e79f47458b24a2",
