@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/zelda-blog/static/css/main.6bbc07b1.chunk.css",
-    "main.js": "/zelda-blog/static/js/main.354f22ea.chunk.js",
-    "main.js.map": "/zelda-blog/static/js/main.354f22ea.chunk.js.map",
-    "runtime-main.js": "/zelda-blog/static/js/runtime-main.f1dc6f03.js",
-    "runtime-main.js.map": "/zelda-blog/static/js/runtime-main.f1dc6f03.js.map",
-    "static/css/2.d9ad5f5c.chunk.css": "/zelda-blog/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.f39febe7.chunk.js": "/zelda-blog/static/js/2.f39febe7.chunk.js",
-    "static/js/2.f39febe7.chunk.js.map": "/zelda-blog/static/js/2.f39febe7.chunk.js.map",
-    "index.html": "/zelda-blog/index.html",
-    "precache-manifest.dffe76267347b62caab1bbe9831f1fab.js": "/zelda-blog/precache-manifest.dffe76267347b62caab1bbe9831f1fab.js",
-    "service-worker.js": "/zelda-blog/service-worker.js",
-    "static/css/2.d9ad5f5c.chunk.css.map": "/zelda-blog/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.6bbc07b1.chunk.css.map": "/zelda-blog/static/css/main.6bbc07b1.chunk.css.map",
-    "static/js/2.f39febe7.chunk.js.LICENSE.txt": "/zelda-blog/static/js/2.f39febe7.chunk.js.LICENSE.txt",
-    "static/media/ninjaS.png": "/zelda-blog/static/media/ninjaS.50eaba62.png"
+    "main.css": "/zelda-blog/build/static/css/main.d644d4ad.chunk.css",
+    "main.js": "/zelda-blog/build/static/js/main.e724425c.chunk.js",
+    "main.js.map": "/zelda-blog/build/static/js/main.e724425c.chunk.js.map",
+    "runtime-main.js": "/zelda-blog/build/static/js/runtime-main.79b5d9cd.js",
+    "runtime-main.js.map": "/zelda-blog/build/static/js/runtime-main.79b5d9cd.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/zelda-blog/build/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.f39febe7.chunk.js": "/zelda-blog/build/static/js/2.f39febe7.chunk.js",
+    "static/js/2.f39febe7.chunk.js.map": "/zelda-blog/build/static/js/2.f39febe7.chunk.js.map",
+    "index.html": "/zelda-blog/build/index.html",
+    "precache-manifest.5725b5bbaa7673dc21e33389107e5385.js": "/zelda-blog/build/precache-manifest.5725b5bbaa7673dc21e33389107e5385.js",
+    "service-worker.js": "/zelda-blog/build/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/zelda-blog/build/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.d644d4ad.chunk.css.map": "/zelda-blog/build/static/css/main.d644d4ad.chunk.css.map",
+    "static/js/2.f39febe7.chunk.js.LICENSE.txt": "/zelda-blog/build/static/js/2.f39febe7.chunk.js.LICENSE.txt",
+    "static/media/ninjaS.png": "/zelda-blog/build/static/media/ninjaS.50eaba62.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f1dc6f03.js",
+    "static/js/runtime-main.79b5d9cd.js",
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.f39febe7.chunk.js",
-    "static/css/main.6bbc07b1.chunk.css",
-    "static/js/main.354f22ea.chunk.js"
+    "static/css/main.d644d4ad.chunk.css",
+    "static/js/main.e724425c.chunk.js"
   ]
 }
