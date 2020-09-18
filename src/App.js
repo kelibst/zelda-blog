@@ -5,6 +5,7 @@ import home from './components/routescont/home';
 import pricing from './components/routescont/pricing';
 import about from './components/routescont/about';
 import Post from './components/routescont/Post';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
         <Route path="/about" component={about} />
         <Route path="/:post_id" component={Post} />
       </Switch>
-          
+      
+      <Footer /> 
       </div>
     </BrowserRouter>
   );

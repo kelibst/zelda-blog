@@ -92,3 +92,11 @@
 .orange-text {
   color: #ff9800 !important;
 }
+
+footer.page-footer {
+  bottom: 0;
+  color: #fff;
+}
+.special-color-dark {
+  background-color: #263238 !important;
+}
