@@ -8,6 +8,7 @@ export default class home extends Component {
     posts: [],
     err: null
   }
+  
   componentDidMount(){
     Axios.get('https://jsonplaceholder.typicode.com/posts')
         .then(res =>{
@@ -18,6 +19,9 @@ export default class home extends Component {
           let error;
           if(err.response){
             error = "Something went wrong with the server."
+            setTimeout(()=>{
+              this.props.history.push('/')
+            },2000)
           }else if(err.request){
             error = "There is probably a little problem with your internet"
           }else{

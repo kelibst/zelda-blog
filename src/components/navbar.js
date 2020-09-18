@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light primary-color">
+    <nav className="navbar navbar-expand-lg navbar-light sticky-top primary-color">
 
       <Link className="navbar-brand" to="/">Ninja Blog</Link>
 

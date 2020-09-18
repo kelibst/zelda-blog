@@ -1,6 +1,9 @@
 .header {
-  background-color: khaki;
   min-height: 80vh;
+}
+
+.bg-khaki {
+  background-color: khaki;
 }
 
 .raised {
