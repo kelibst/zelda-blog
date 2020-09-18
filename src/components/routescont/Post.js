@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 
 export default class Post extends Component {
     state = {
-        post: null
+        post: null,
+        err: null
     }
     componentDidMount(){
         let id = this.props.match.params.post_id
@@ -12,7 +13,20 @@ export default class Post extends Component {
                 this.setState({
                     post: res.data
                 })
-            })
+            }).catch(err => {
+                let error;
+                if(err.response){
+                  error = "Something went wrong with the server."
+                }else if(err.request){
+                  error = "There is probably a problem with your internet. Consider Refresing the page"
+                }else{
+                  error = "Something is not right. Try refresing the page."
+                }
+                this.setState({
+                  posts: [],
+                  err: error,
+                })
+              })
         
     }
     render() {
@@ -26,6 +40,7 @@ export default class Post extends Component {
         ) : (
             <div className="text-center">
                 <h4 className="text-center font-weight-bold">Loading Post</h4>
+                <code className="text-center">{this.state.err}</code>
             </div>
         )
         return (

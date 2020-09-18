@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 
 export default class home extends Component {
   state = {
-    posts: []
+    posts: [],
+    err: null
   }
   componentDidMount(){
     Axios.get('https://jsonplaceholder.typicode.com/posts')
@@ -12,10 +13,23 @@ export default class home extends Component {
           this.setState({
             posts: res.data.slice(0,10)
           })
+        }).catch(err => {
+          let error;
+          if(err.response){
+            error = "Something went wrong with the server."
+          }else if(err.request){
+            error = "There is probably a little problem with your internet"
+          }else{
+            error = "Something is not right. Try refresing the page."
+          }
+          this.setState({
+            posts: [],
+            err: error,
+          })
         })
   }
   render() {
-    const { posts } = this.state;
+    const { posts, err } = this.state;
     const postList = posts.length ? (
      posts.map(post => {
        return(
@@ -55,7 +69,9 @@ export default class home extends Component {
      })
     ) : ( 
       <div className="mx-auto text-center">
-          <p className="text-center">Post not Loaded</p>
+      {/*if the post is not loaded wait for 3 seconds and reload the page */}
+          <p className="text-center">Post is Loading...</p>
+          <code className="text-center">{err}</code>
       </div>
     )
     return (
