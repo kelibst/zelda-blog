@@ -1,6 +1,8 @@
+/* eslint-disable import/no-named-as-default */
+/* eslint-disable import/no-named-as-default-member */
 import React from 'react';
-import Header from './components/header'
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Header from './components/header';
 import home from './components/routescont/home';
 import pricing from './components/routescont/pricing';
 import about from './components/routescont/about';
@@ -13,13 +15,13 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
-        <Route exact path="/" component={home} />
-        <Route path="/pricing" component={pricing} />
-        <Route path="/about" component={about} />
-        <Route path="/:post_id" component={Post} />
-      </Switch>
-      
-      <Footer /> 
+          <Route exact path="/" component={home} />
+          <Route path="/pricing" component={pricing} />
+          <Route path="/about" component={about} />
+          <Route path="/:post_id" component={Post} />
+        </Switch>
+
+        <Footer />
       </div>
     </BrowserRouter>
   );

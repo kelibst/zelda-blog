@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Axios from 'axios'
 import React, { Component } from 'react'
 

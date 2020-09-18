@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Axios from 'axios'
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
@@ -33,7 +34,7 @@ export default class home extends Component {
     const postList = posts.length ? (
      posts.map(post => {
        return(
-         <div className="col-sm-6 col-md-4" key={post.id}>
+         <div className="col-sm-6 my-1 col-md-4" key={post.id}>
                   
           <div className="card card-cascade wider border-0">
 
