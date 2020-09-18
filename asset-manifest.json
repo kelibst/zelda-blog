@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/zelda-blog/static/css/main.6b835975.chunk.css",
+    "main.js": "/zelda-blog/static/js/main.cf89aac7.chunk.js",
+    "main.js.map": "/zelda-blog/static/js/main.cf89aac7.chunk.js.map",
+    "runtime-main.js": "/zelda-blog/static/js/runtime-main.f1dc6f03.js",
+    "runtime-main.js.map": "/zelda-blog/static/js/runtime-main.f1dc6f03.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/zelda-blog/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.be361556.chunk.js": "/zelda-blog/static/js/2.be361556.chunk.js",
+    "static/js/2.be361556.chunk.js.map": "/zelda-blog/static/js/2.be361556.chunk.js.map",
+    "index.html": "/zelda-blog/index.html",
+    "precache-manifest.0494eef84de1aefe507d40ab67154b68.js": "/zelda-blog/precache-manifest.0494eef84de1aefe507d40ab67154b68.js",
+    "service-worker.js": "/zelda-blog/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/zelda-blog/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.6b835975.chunk.css.map": "/zelda-blog/static/css/main.6b835975.chunk.css.map",
+    "static/js/2.be361556.chunk.js.LICENSE.txt": "/zelda-blog/static/js/2.be361556.chunk.js.LICENSE.txt",
+    "static/media/ninjaS.png": "/zelda-blog/static/media/ninjaS.50eaba62.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f1dc6f03.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.be361556.chunk.js",
+    "static/css/main.6b835975.chunk.css",
+    "static/js/main.cf89aac7.chunk.js"
+  ]
+}
