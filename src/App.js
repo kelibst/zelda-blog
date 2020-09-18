@@ -16,6 +16,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={home} />
+          <Route exact path="/zelda-blog/" component={home} />
           <Route path="/pricing" component={pricing} />
           <Route path="/about" component={about} />
           <Route path="/:post_id" component={Post} />

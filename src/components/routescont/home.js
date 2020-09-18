@@ -20,7 +20,7 @@ export default class home extends Component {
           if(err.response){
             error = "Something went wrong with the server."
             setTimeout(()=>{
-              this.props.history.push('/')
+              this.props.history.push('/zelda-blog')
             },2000)
           }else if(err.request){
             error = "There is probably a little problem with your internet"

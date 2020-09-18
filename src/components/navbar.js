@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light sticky-top primary-color">
 
-      <Link className="navbar-brand" to="/">Ninja Blog</Link>
+      <Link className="navbar-brand" to="/zelda-blog">Ninja Blog</Link>
 
       <button
         className="navbar-toggler"
@@ -23,7 +23,7 @@ export default function Navbar() {
 
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-            <NavLink className="nav-link" to="/">
+            <NavLink className="nav-link" to="/zelda-blog">
               Home
               <span className="sr-only">(current)</span>
             </NavLink>

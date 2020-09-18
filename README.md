@@ -1,6 +1,6 @@
 # zelda-blog
 A basic Blog page using React and Redux. 
-Fetches Post form Json placeholder and display them on the page using.
+Fetches Post form Json placeholder and displays them on the page.
 
 
 
