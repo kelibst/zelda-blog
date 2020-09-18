@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc27737aa580e27f430ee4a338288682",
+    "revision": "1643855564454821b38dcd4fec1d095e",
     "url": "/zelda-blog/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zelda-blog/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "5de24b650c3acba73836",
+    "revision": "8ce02aa23759baaea2ff",
     "url": "/zelda-blog/static/css/main.6bbc07b1.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/zelda-blog/static/js/2.f39febe7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5de24b650c3acba73836",
-    "url": "/zelda-blog/static/js/main.354f22ea.chunk.js"
+    "revision": "8ce02aa23759baaea2ff",
+    "url": "/zelda-blog/static/js/main.47cbf232.chunk.js"
   },
   {
     "revision": "14a393e79f47458b24a2",
