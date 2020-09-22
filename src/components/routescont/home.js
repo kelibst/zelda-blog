@@ -1,40 +1,12 @@
 /* eslint-disable */
-import Axios from 'axios'
 import React, { Component } from 'react'
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
 
-export default class home extends Component {
-  state = {
-    posts: [],
-    err: null
-  }
-  
-  componentDidMount(){
-    Axios.get('https://jsonplaceholder.typicode.com/posts')
-        .then(res =>{
-          this.setState({
-            posts: res.data.slice(0,10)
-          })
-        }).catch(err => {
-          let error;
-          if(err.response){
-            error = "Something went wrong with the server."
-            setTimeout(()=>{
-              this.props.history.push('/zelda-blog')
-            },2000)
-          }else if(err.request){
-            error = "There is probably a little problem with your internet"
-          }else{
-            error = "Something is not right. Try refresing the page."
-          }
-          this.setState({
-            posts: [],
-            err: error,
-          })
-        })
-  }
+
+class home extends Component { 
   render() {
-    const { posts, err } = this.state;
+    const { posts} = this.props;
     const postList = posts.length ? (
      posts.map(post => {
        return(
@@ -92,3 +64,9 @@ export default class home extends Component {
     )
   }
 }
+const mapProps = (state) => {
+  return {
+    posts: state.posts
+  }
+}
+export default connect(mapProps)(home)

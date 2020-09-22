@@ -1,47 +1,28 @@
 /* eslint-disable */
-import Axios from 'axios'
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { deletePostAction } from '../../actions/postAction'
 
-export default class Post extends Component {
-    state = {
-        post: null,
-        err: null
-    }
-    componentDidMount(){
-        let id = this.props.match.params.post_id
-        Axios.get('https://jsonplaceholder.typicode.com/posts/' + id)
-            .then(res => {
-                this.setState({
-                    post: res.data
-                })
-            }).catch(err => {
-                let error;
-                if(err.response){
-                  error = "Something went wrong with the server."
-                }else if(err.request){
-                  error = "There is probably a problem with your internet. Consider Refresing the page"
-                }else{
-                  error = "Something is not right. Try refresing the page."
-                }
-                this.setState({
-                  posts: [],
-                  err: error,
-                })
-              })
-        
+class Post extends Component {
+    handleClick = () => {
+        this.props.deletePost(this.props.post.id);
+        this.props.history.push('/zelda-blog')
     }
     render() {
-        const post = this.state.post ? (
+        const post = this.props.post ? (
             <div className="post">
-                <h4 className="text-center font-weight-bold my-5">{this.state.post.title} </h4>
+                <h4 className="text-center font-weight-bold my-5">{this.props.post.title} </h4>
                 <p className="text-secondary">
-                    { this.state.post.body }
+                    { this.props.post.body }
+                    <br/>
+                    <br/>
+                    <button className="btn btn-danger text-center" onClick={this.handleClick}> Delete Post</button>
                 </p>
             </div>
         ) : (
             <div className="text-center">
                 <h4 className="text-center font-weight-bold">Loading Post</h4>
-                <code className="text-center">{this.state.err}</code>
+                <code className="text-center">{this.props.err}</code>
             </div>
         )
         return (
@@ -51,3 +32,18 @@ export default class Post extends Component {
         )
     }
 }
+const mapProps = (state, ownProps) => {
+    let id =  ownProps.match.params.post_id;
+    return {
+        post: state.posts.find((post)=>{
+            return post.id == id;
+        })
+    }  
+}
+
+const mapDisProps = (dispatch) => {
+    return {
+        deletePost: (id) => {dispatch(deletePostAction(id))} 
+    }
+}
+export default  connect(mapProps, mapDisProps)(Post)

@@ -8,12 +8,19 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './index.css';
 import App from './App';
 import logo from './img/ninjaS.png';
+import {createStore} from 'redux'
+import {Provider} from 'react-redux'
 import * as serviceWorker from './serviceWorker';
+import rootReducer from './reducers/rootReducer';
+
+const store = createStore(rootReducer);
 
 ReactDOM.render(
+  <Provider store={store}>
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
+  </Provider>,
   document.getElementById('root'),
 );
 
